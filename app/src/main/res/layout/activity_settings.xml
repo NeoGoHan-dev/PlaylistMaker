@@ -17,11 +17,13 @@
         android:layout_marginBottom="@dimen/settings_title_margin_bottom">
 
         <ImageView
+	    android:id="@+id/backButton"
             android:layout_width="@dimen/back_icon_size"
             android:layout_height="@dimen/back_icon_size"
             android:src="@drawable/ic_button_back"
             android:layout_marginEnd="@dimen/back_icon_margin_end"
-            app:tint="@color/black" />
+            app:tint="@color/black"
+	    android:contentDescription="@string/back_button_description" />
 
         <TextView
             android:layout_width="0dp"
@@ -94,7 +96,8 @@
                     android:layout_height="@dimen/settings_icon_size"
                     android:src="@drawable/ic_share"
                     android:layout_marginEnd="@dimen/settings_icon_margin_end"
-                    app:tint="@color/gray" />
+                    app:tint="@color/gray"
+		    android:contentDescription="@string/share_icon_description" />
 
             </LinearLayout>
 
@@ -128,7 +131,8 @@
                     android:src="@drawable/ic_support"
                     android:tint="@color/gray"
                     android:layout_marginEnd="@dimen/settings_icon_margin_end"
-                    tools:ignore="UseAppTint" />
+                    tools:ignore="UseAppTint"
+		    android:contentDescription="@string/support_icon_description" />
 
 
             </LinearLayout>
@@ -163,7 +167,8 @@
                     android:layout_height="@dimen/settings_icon_size"
                     android:src="@drawable/ic_agreement"
                     android:layout_marginEnd="@dimen/settings_icon_margin_end"
-                    app:tint="@color/gray" />
+                    app:tint="@color/gray"
+		    android:contentDescription="@string/agreement_icon_description" />
 
 
             </LinearLayout>
