@@ -13,8 +13,8 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center_vertical"
-        android:layout_marginTop="@dimen/settings_title_margin_top"
-        android:layout_marginBottom="@dimen/settings_title_margin_bottom">
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp">
 
         <ImageView
 	    android:id="@+id/backButton"
@@ -32,7 +32,7 @@
             android:text="@string/settings_title"
             android:textSize="@dimen/settings_title_size"
             android:textColor="@color/black"
-            android:gravity="center" />
+            android:gravity="center_vertical" />
 
         <View
             android:layout_width="@dimen/back_icon_size"
@@ -54,7 +54,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center_vertical"
-            android:padding="@dimen/settings_item_padding">
+            android:padding="16dp">
 
             <TextView
                 android:layout_width="0dp"
@@ -75,7 +75,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center_vertical"
-            android:padding="@dimen/settings_item_padding">
+            android:padding="16dp">
 
             <TextView
                 android:layout_width="0dp"
@@ -109,7 +109,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center_vertical"
-            android:padding="@dimen/settings_item_padding">
+            android:padding="16dp">
 
             <TextView
                 android:layout_width="0dp"
@@ -133,9 +133,8 @@
                     android:layout_marginEnd="@dimen/settings_icon_margin_end"
                     tools:ignore="UseAppTint"
 		    android:contentDescription="@string/support_icon_description" />
-
-
-            </LinearLayout>
+ 
+	    </LinearLayout>
 
         </LinearLayout>
 
@@ -146,7 +145,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center_vertical"
-            android:padding="@dimen/settings_item_padding">
+            android:padding="16dp">
 
             <TextView
                 android:layout_width="0dp"
@@ -171,7 +170,7 @@
 		    android:contentDescription="@string/agreement_icon_description" />
 
 
-            </LinearLayout>
+             </LinearLayout>
 
         </LinearLayout>
 

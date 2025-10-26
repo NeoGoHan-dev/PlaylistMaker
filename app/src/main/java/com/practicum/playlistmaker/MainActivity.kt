@@ -15,21 +15,17 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setClickListeners() {
-        findViewById<android.view.View>(R.id.searchButton).setOnClickListener(
-            object : View.OnClickListener {
-                override fun onClick(v: View?) {
-                    val intent = Intent(this@MainActivity, SearchActivity::class.java)
-                    startActivity(intent)
-                }
-            }
-        )
+        findViewById<View>(R.id.searchButton).setOnClickListener {
+            val intent = Intent(this@MainActivity, SearchActivity::class.java)
+            startActivity(intent)
+        }
 
-        findViewById<android.view.View>(R.id.mediaLibraryButton).setOnClickListener {
+        findViewById<View>(R.id.mediaLibraryButton).setOnClickListener {
             val intent = Intent(this@MainActivity, MediaLibraryActivity::class.java)
             startActivity(intent)
         }
 
-        findViewById<android.view.View>(R.id.settingsButton).setOnClickListener {
+        findViewById<View>(R.id.settingsButton).setOnClickListener {
             val intent = Intent(this@MainActivity, SettingsActivity::class.java)
             startActivity(intent)
         }
