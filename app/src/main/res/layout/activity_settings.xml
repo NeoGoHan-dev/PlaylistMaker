@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="@dimen/main_padding"
     android:background="@color/white">
 
     <LinearLayout
@@ -13,15 +12,14 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center_vertical"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="30dp">
+	android:padding="4dp"
+        tools:ignore="UseCompoundDrawables">
 
         <ImageView
 	    android:id="@+id/backButton"
             android:layout_width="@dimen/back_icon_size"
             android:layout_height="@dimen/back_icon_size"
             android:src="@drawable/ic_button_back"
-            android:layout_marginEnd="@dimen/back_icon_margin_end"
             app:tint="@color/black"
 	    android:contentDescription="@string/back_button_description" />
 
@@ -32,12 +30,9 @@
             android:text="@string/settings_title"
             android:textSize="@dimen/settings_title_size"
             android:textColor="@color/black"
-            android:gravity="center_vertical" />
+	    android:padding="12dp" />
 
-        <View
-            android:layout_width="@dimen/back_icon_size"
-            android:layout_height="@dimen/back_icon_size"
-            android:layout_marginEnd="@dimen/back_icon_margin_end" />
+        
 
     </LinearLayout>
 
@@ -51,10 +46,9 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="61dp"
             android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:padding="16dp">
+            android:gravity="center_vertical">
 
             <TextView
                 android:layout_width="0dp"
@@ -62,20 +56,21 @@
                 android:layout_weight="1"
                 android:text="@string/dark_theme"
                 android:textSize="@dimen/settings_text_size"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+		android:padding="16dp" />
 
             <com.google.android.material.switchmaterial.SwitchMaterial
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+		android:padding="12dp" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="61dp"
             android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:padding="16dp">
+            android:gravity="center_vertical">
 
             <TextView
                 android:layout_width="0dp"
@@ -83,19 +78,20 @@
                 android:layout_weight="1"
                 android:text="@string/share_app"
                 android:textSize="@dimen/settings_text_size"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+		android:padding="16dp" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:gravity="center_vertical">
+                android:gravity="center_vertical"
+		android:padding="12dp">
 
                 <ImageView
                     android:layout_width="@dimen/settings_icon_size"
                     android:layout_height="@dimen/settings_icon_size"
                     android:src="@drawable/ic_share"
-                    android:layout_marginEnd="@dimen/settings_icon_margin_end"
                     app:tint="@color/gray"
 		    android:contentDescription="@string/share_icon_description" />
 
@@ -106,10 +102,9 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="61dp"
             android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:padding="16dp">
+            android:gravity="center_vertical">
 
             <TextView
                 android:layout_width="0dp"
@@ -117,20 +112,21 @@
                 android:layout_weight="1"
                 android:text="@string/support"
                 android:textSize="@dimen/settings_text_size"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+		android:padding="16dp" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:gravity="center_vertical">
+                android:gravity="center_vertical"
+		android:padding="12dp">
 
                 <ImageView
                     android:layout_width="@dimen/settings_icon_size"
                     android:layout_height="@dimen/settings_icon_size"
                     android:src="@drawable/ic_support"
                     android:tint="@color/gray"
-                    android:layout_marginEnd="@dimen/settings_icon_margin_end"
                     tools:ignore="UseAppTint"
 		    android:contentDescription="@string/support_icon_description" />
  
@@ -142,10 +138,9 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="61dp"
             android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:padding="16dp">
+            android:gravity="center_vertical">
 
             <TextView
                 android:layout_width="0dp"
@@ -153,19 +148,20 @@
                 android:layout_weight="1"
                 android:text="@string/user_agreement"
                 android:textSize="@dimen/settings_text_size"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+		android:padding="16dp" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:gravity="center_vertical">
+                android:gravity="center_vertical"
+		android:padding="12dp">
 
                 <ImageView
                     android:layout_width="@dimen/settings_icon_size"
                     android:layout_height="@dimen/settings_icon_size"
                     android:src="@drawable/ic_agreement"
-                    android:layout_marginEnd="@dimen/settings_icon_margin_end"
                     app:tint="@color/gray"
 		    android:contentDescription="@string/agreement_icon_description" />
 
