@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="searchButton" type="id"/>
+    <item name="mediaLibraryButton" type="id"/>
+    <item name="settingsButton" type="id"/>
+</resources>
