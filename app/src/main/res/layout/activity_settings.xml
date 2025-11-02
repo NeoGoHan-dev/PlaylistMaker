@@ -16,7 +16,7 @@
         tools:ignore="UseCompoundDrawables">
 
         <ImageView
-	    android:id="@+id/backButton"
+            android:id="@+id/backButton"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:src="@drawable/ic_button_back"
