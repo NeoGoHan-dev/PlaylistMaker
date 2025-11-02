@@ -12,13 +12,13 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center_vertical"
-	android:padding="4dp"
+        android:padding="4dp"
         tools:ignore="UseCompoundDrawables">
 
         <ImageView
 	    android:id="@+id/backButton"
-            android:layout_width="@dimen/back_icon_size"
-            android:layout_height="@dimen/back_icon_size"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:src="@drawable/ic_button_back"
             app:tint="@color/black"
 	    android:contentDescription="@string/back_button_description" />
@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/settings_title"
-            android:textSize="@dimen/settings_title_size"
+            android:textSize="22sp"
             android:textColor="@color/black"
 	    android:padding="12dp" />
 
@@ -41,7 +41,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:background="@color/white"
-        android:paddingVertical="@dimen/settings_padding_vertical"
+        android:paddingVertical="12dp"
         app:cornerRadius="@dimen/settings_corner_radius">
 
         <LinearLayout
